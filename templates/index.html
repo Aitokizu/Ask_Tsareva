@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F28D52;
+            padding: 10px;
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile-image{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+        }
+        .search-button{
+            all: unset;
+            border: 2px;
+            border-radius: 3px;
+            background-color: #F25C5C;
+            padding: 8px;
+            color: white;
+            cursor: pointer;
+        }
+        .search-button:hover{
+            opacity: 80%;
+        }
+        .search-input{
+            height: 25px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                LearnToday
+            </a>
+        </div>
+        <div class="search">
+            <form action="#">
+                <input class="search-input" type="text">
+                <button class="search-button">Learn</button>
+            </form>
+        </div>
+        <div class="profile">
+            <div class="profile-image">
+                <img src="#" alt="profile">
+            </div>
+            <div class="profile-settings">
+                <div class="account-name">Kapitoshka</div>
+                <div class="account-actions">
+                    <a href="./settings.html">Settings</a>
+                    <a href="./logout.html">Log out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
