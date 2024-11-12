@@ -4,45 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        body{
-            margin: 0;
-        }
-        .header{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #F28D52;
-            padding: 10px;
-        }
-        .profile{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .profile-image{
-            height: 50px;
-            width: 50px;
-            border: 2px solid black;
-        }
-        .search-button{
-            all: unset;
-            border: 2px;
-            border-radius: 3px;
-            background-color: #F25C5C;
-            padding: 8px;
-            color: white;
-            cursor: pointer;
-        }
-        .search-button:hover{
-            opacity: 80%;
-        }
-        .search-input{
-            height: 25px;
-            width: 500px;
-        }
-    </style>
+    <link rel="stylesheet" href="./../static/css/index.css">
 </head>
 <body>
     <header class="header">
@@ -70,5 +32,106 @@
             </div>
         </div>
     </header>
+    <main class="container">
+        <div class="title-bar">
+            <h1>Hot questions</h1>
+            <a href="./new-questions.html">New questions</a>
+        </div>
+
+        <div class="content">
+            <div class="cards">
+                 <article class="card">
+                    <div class="user-post">
+                        <img src="./image.jpg" alt="image" class="card-image">
+                        <input type="number" class="card-likes" value="10">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="post-content-preview">
+                            <h3 class="card-title"><a href="#">Question title</a></h3>
+                            <div class="card-text">Text here</div>
+                        </div>
+                        <div class="post-content-bottom">
+                            <a href="./answers.html">Answer(23)</a>
+                            <div class="tags">
+                                <a href="#">Link</a>
+                                <a href="#">Link</a>
+                                <a href="#">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                 <article class="card">
+                    <div class="user-post">
+                        <img src="./image.jpg" alt="image" class="card-image">
+                        <input type="number" class="card-likes" value="10">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="post-content-preview">
+                            <h3 class="card-title"><a href="#">Question title</a></h3>
+                            <div class="card-text">Text here</div>
+                        </div>
+                        <div class="post-content-bottom">
+                            <a href="./answers.html">Answer(23)</a>
+                            <div class="tags">
+                                <a href="#">Link</a>
+                                <a href="#">Link</a>
+                                <a href="#">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="user-post">
+                        <img src="./image.jpg" alt="image" class="card-image">
+                        <input type="number" class="card-likes" value="10">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="post-content-preview">
+                            <h3 class="card-title"><a href="#">Question title</a></h3>
+                            <div class="card-text">Text here</div>
+                        </div>
+                        <div class="post-content-bottom">
+                            <a href="./answers.html">Answer(23)</a>
+                            <div class="tags">
+                                <a href="#">Link</a>
+                                <a href="#">Link</a>
+                                <a href="#">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="pagination">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>...</button>
+                    <button>100</button>
+
+                </div>
+            </div>
+            <aside class="sidebar">
+                <section class="popular-tags">
+                    <h2>Tags of the week</h2>
+                    <div class="tags">
+                        <a href="#">Tag</a>
+                        <a href="#">Tag</a>
+                        <a href="#">Tag</a>
+                    </div>
+                </section>
+                <section class="top-mentors">
+                    <h2>Top mentors</h2>
+                    <ul class="top-mentors-list">
+                        <li><a href="#">Username</a></li>
+                        <li><a href="#">Username</a></li>
+                        <li><a href="#">Username</a></li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+    </main>
+
 </body>
 </html>
